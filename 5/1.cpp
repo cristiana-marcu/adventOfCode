@@ -15,7 +15,11 @@ void move(int n, std::string from, std::string to)
 
 int execute_instructions(std::string ship[9], std::string line)
 {
+    std::string from, to;
+    int n;
 
+    std::string aux;
+    
 }
 
 int main()
