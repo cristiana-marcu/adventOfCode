@@ -5,12 +5,13 @@ void move(int n, int from, int to, std::string ship[10])
 {
     std::string aux;
 
-    for (int i = 1; i <= n; i++)
-    {
-        aux = ship[from].substr(ship[from].length() - 1, ship[from].length());
-        ship[from].pop_back();
+    //for (int i = 1; i <= n; i++)
+    //{
+        aux = ship[from].substr(ship[from].length() - n, ship[from].length());
+        for (int i = 1; i <= n; i++)
+			ship[from].pop_back();
         ship[to] = ship[to] + aux;
-    }
+    //}
 }
 
 int get_number(int a, int b, std::string str)
